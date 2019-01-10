@@ -18,12 +18,7 @@ class Amqp
  * ...
  * @author Thomas Byrne
  */
-#if nodejs
 @:jsRequire('amqplib/callback_api')
-#else
-@:native('amqplib/callback_api')
-#end
-
 extern private class AmqpCallback {
 	public static function connect(url:AmqpUrl, ?options:{}, ?callback:AmqpError->AmqpConnection->Void):Void;
 }
