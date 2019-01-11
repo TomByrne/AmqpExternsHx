@@ -9,6 +9,9 @@ haxe:
  
 hxml:
 - test/ImportAll.hxml
+
+install:
+ - haxelib dev AmqpExterns .
  
 script:
 - haxe test/ImportAll.hxml
@@ -17,5 +20,3 @@ deploy:
  - provider: script
    haxe: 3.4.7
    script: bash ./release_haxelib.sh $HAXELIB_PWD
-   on:
-      tags: true
