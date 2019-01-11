@@ -11,6 +11,7 @@ hxml:
 - test/ImportAll.hxml
 
 install:
+ - haxelib install hxnodejs
  - haxelib dev AmqpExterns .
  
 script:
