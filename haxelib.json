@@ -3,12 +3,11 @@
   "url": "http://github.com/TomByrne/AmqpExternsHx",
   "license": "MIT",
   "tags": ["amqp", "messaging", "messages", "queue", "rabbitmq"],
-  "description": "Externs Form the NPM AMQP library 'amqplib'. JS only of course.",
+  "description": "Externs for the NPM AMQP library 'amqplib'. JS only of course.",
   "version": "0.0.1",
   "releasenote": "",
   "contributors": ["tbyrne"],
   "classPath":"src",
   "dependencies": {
-	  "hxnodejs": "4.0.9"
   }
 }
