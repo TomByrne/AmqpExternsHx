@@ -7,6 +7,12 @@ haxe:
  - "3.4.7"
  - "development"
  
+hxml:
+- test/ImportAll.hxml
+ 
+script:
+- haxe test/ImportAll.hxml
+ 
 deploy:
  - provider: script
    haxe: 3.4.7

@@ -1,0 +1,5 @@
+-cp .
+-cp ../src
+-js ../bin/ImportAll.js
+-lib hxnodejs:4.0.9
+-main ImportAll

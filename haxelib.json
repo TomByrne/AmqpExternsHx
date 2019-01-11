@@ -9,5 +9,6 @@
   "contributors": ["tbyrne"],
   "classPath":"src",
   "dependencies": {
+	  "hxnodejs": "4.0.9"
   }
 }
