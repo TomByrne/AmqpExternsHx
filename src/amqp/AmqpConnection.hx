@@ -11,7 +11,7 @@ extern class AmqpConnection
 	 * Although it’s not strictly necessary, it will avoid some warnings in the server log if you close the connection before exiting
 	 */
 	function close(?callback:(String->Void)):Void;
-	function on(event:AmqpConnectionEvents, ?callback:(Void->Void)):Void;
+	function on(event:AmqpConnectionEvents, ?callback:(Dynamic->Void)):Void;
 	
 	/**
 	 * Resolves to an open Channel (The callback version returns the channel; but it is not usable before the callback has been invoked). May fail if there are no more channels available (i.e., if there are already channelMax channels open).
@@ -30,4 +30,10 @@ extern class AmqpConnection
 	 * Emitted once the closing handshake initiated by #close() has completed; or, if server closed the connection, once the client has sent the closing handshake; or, if the underlying stream (e.g., socket) has closed.
 	 */
 	var close = 'close';
+	
+
+	// Undocumented
+	var error = 'error';
 }
+
+typedef AmqpConnectionEvent = {};
