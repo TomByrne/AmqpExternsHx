@@ -4,7 +4,7 @@
   "license": "MIT",
   "tags": ["amqp", "messaging", "messages", "queue", "rabbitmq"],
   "description": "Externs for the NPM AMQP library 'amqplib'. JS only of course.",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "releasenote": "",
   "contributors": ["tbyrne"],
   "classPath":"src",
